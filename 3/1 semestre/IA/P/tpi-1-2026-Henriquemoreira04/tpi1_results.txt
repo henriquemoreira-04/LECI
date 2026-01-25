@@ -1,0 +1,29 @@
+
+>> Ex. 1 ----------------------------------------------
+(breadth) ['Braga', 'Guimaraes', 'Braganca', 'Guarda', 'Castelo Branco', 'Portalegre', 'Evora', 'Beja', 'Faro']
+2453 1696 | 8 1011
+(depth) ['Braga', 'Guimaraes', 'Braganca', 'Guarda', 'Castelo Branco', 'Covilha', 'Viseu', 'Agueda', 'Aveiro', 'Coimbra', 'Figueira', 'Leiria', 'Santarem', 'Evora', 'Beja', 'Faro']
+24 15 | 15 1364
+
+>> Ex. 2 ----------------------------------------------
+(hybrid) ['Braga', 'Porto', 'Agueda', 'Coimbra', 'Leiria', 'Santarem', 'Evora', 'Beja', 'Faro']
+21 11 | 8 706
+(hybrid) ['Braganca', 'Guarda', 'Castelo Branco', 'Santarem', 'Evora', 'Beja']
+17 6 | 5 663
+
+>> Ex. 3 ----------------------------------------------
+(depth/bipolar) ['Braga', 'Guimaraes', 'Braganca', 'Guarda', 'Castelo Branco', 'Santarem', 'Lisboa', 'Evora', 'Beja', 'Faro']
+12 13 | 1127
+(breadth/bipolar) ['Braga', 'Guimaraes', 'Braganca', 'Guarda', 'Castelo Branco', 'Portalegre', 'Evora', 'Beja', 'Faro']
+33 22 | 1011
+
+>> Ex. 4 ----------------------------------------------
+actions(): [Putdown(t1,e), Stack(t1,e,a), Stack(t1,e,b), Stack(t1,e,h)] 0.010218917000000001
+actions2(): [Stack(t1,e,a), Stack(t1,e,h), Stack(t1,e,b), Putdown(t1,e)] 0.00033163199999999837 
+
+actions(): [Putdown(t1,e), Stack(t1,e,h), Stack(t1,e,i), Stack(t1,e,k)] 0.020296046000000005
+actions2(): [Stack(t1,e,k), Stack(t1,e,i), Stack(t1,e,h), Putdown(t1,e)] 0.0004185069999999985 
+
+actions(): [Putdown(t1,e), Stack(t1,e,i), Stack(t1,e,k), Stack(t1,e,z)] 0.04006657200000001
+actions2(): [Stack(t1,e,z), Stack(t1,e,k), Stack(t1,e,i), Putdown(t1,e)] 0.0006192689999999917 
+
