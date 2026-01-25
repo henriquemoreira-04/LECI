@@ -1,0 +1,23 @@
+Origin: Ubuntu
+Label: Ubuntu
+Suite: jammy
+Version: 22.04
+Codename: jammy
+Date: Thu, 21 Apr 2022 17:16:08 UTC
+Architectures: amd64 i386
+Components: main restricted
+Description: Ubuntu Jammy 22.04
+Acquire-By-Hash: yes
+SHA256:
+ 5ac9899ef37c4bdb69d3dc170152d6259b6bd1674797fee62e791d64c3a78917      101 restricted/binary-amd64/Release
+ 21cac8d16ae09f5deef3d86f7f16b7dc6bdea700fe4db594004af7b9a23ed058    36261 restricted/binary-amd64/Packages.gz
+ c812e43f898e5a9512764fa81578e184878972eed029203d1f4ee37d216e9b99   224983 restricted/binary-amd64/Packages
+ 9a93163d07139e97e2af51268b161064beb779bb0d6942ae6ca1f0d838d3067e      100 restricted/binary-i386/Release
+ c382793467133839938d9a66882bab2a5ac88fd549f11cef590b1a9cfa0d5057     4887 restricted/binary-i386/Packages.gz
+ 133344d751c3db4bc818f96da96c8b394410502b4202130db7d09905dd9e15d9    22336 restricted/binary-i386/Packages
+ d0eb69cd34be34406d2e2aa4d0751005b17808e30c5d32acd5890c5b8cba7517       95 main/binary-amd64/Release
+ 9b8fbccafa086c5b88a191570b358a77b15b473a4d706b730f2343d6d6a034f4    24479 main/binary-amd64/Packages.gz
+ 65977061b04ea69ccda40770d980b53cd9d1faaf3c8c0452de949b773b1f9089    88582 main/binary-amd64/Packages
+ 0fe43a85f9f16b26797f24ed4147ab1ea7c0764fd601c943bd35d637f0b4308c       94 main/binary-i386/Release
+ aa30a09cd1ab3d7499d4fdbb554aed7a1df4aed95bc071a8ee18c499ddddcc25    21925 main/binary-i386/Packages.gz
+ 26d8e74cda49438862f3f8786fd5d0f18835f75310e08a8185572e31f7492701    81848 main/binary-i386/Packages

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo 4</title>
+<script src="completecalculator.js"></script>
+</head>
+<body>
+<input id="op1" value="2">
+<span id="op-view">+</span>
+<input id="op2" value="3">
+<span>=</span>
+<input id="res" value=""><br>
+<select id="operation" onchange="operation()">
+<option value="+"> Addition </option>
+<option value="-"> Subtraction </option>
+</select>
+<button onclick="calculate()">Calculate</button>
+<body onload="clock()">
+  <h1 id="clock" style="text-align: center;">00:00:00</h1>  
+<script src="clock.js"></script>
+</body>
+</body>
+</html>
