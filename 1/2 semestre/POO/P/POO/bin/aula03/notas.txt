@@ -1,0 +1,4 @@
+Juan Pérez	11.3	9.3
+María López	16.7	5.1
+Carlos García	7.8	18.9
+Ana Martínez	10.6	15.9
