@@ -1,0 +1,228 @@
+# do FlipFlopD_Demo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:22:15 on Mar 12,2024
+# vcom -work work FlipFlopD_Demo.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package dffeas_pack
+# -- Loading package altera_primitives_components
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity FlipFlopD_Demo
+# -- Compiling architecture structure of FlipFlopD_Demo
+# End time: 11:22:15 on Mar 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 11:22:15 on Mar 12,2024
+# vcom -work work Waveform2.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FlipFlopD_Demo_vhd_vec_tst
+# -- Compiling architecture FlipFlopD_Demo_arch of FlipFlopD_Demo_vhd_vec_tst
+# ** Error: Waveform2.vwf.vht(59): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(59): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(61): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(61): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(63): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(63): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(65): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(65): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(67): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(67): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(69): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(69): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(71): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(71): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(73): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(73): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(75): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(75): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(77): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(77): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(79): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(79): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(81): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(81): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(83): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(83): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(85): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(85): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(87): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(87): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(89): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(89): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(91): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(91): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(93): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(93): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(95): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(95): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(97): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(97): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(99): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(99): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(101): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(101): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(103): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(103): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(105): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(105): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(107): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(107): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(109): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(109): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(111): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(111): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(113): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(113): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(115): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(115): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(117): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(117): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(119): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(119): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(121): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(121): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(123): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(123): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(125): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(125): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(127): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(127): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(129): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(129): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(131): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(131): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(133): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(133): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(135): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(135): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(137): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(137): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(139): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(139): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(141): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(141): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(143): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(143): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(145): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(145): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(147): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(147): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(149): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(149): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(151): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(151): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(153): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(153): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(155): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(155): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(157): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(157): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(159): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(159): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(161): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(161): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(163): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(163): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(165): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(165): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(167): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(167): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(169): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(169): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(171): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(171): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(173): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(173): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(175): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(175): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(177): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(177): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(179): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(179): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(181): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(181): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(183): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(183): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(185): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(185): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(187): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(187): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(189): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(189): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(191): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(191): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(193): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(193): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(195): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(195): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(197): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(197): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(199): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(199): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(201): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(201): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(203): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(203): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(205): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(205): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(207): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(207): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(209): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(209): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(211): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(211): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(213): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(213): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(215): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(215): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(217): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(217): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(219): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(219): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(221): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(221): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(223): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(223): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(225): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(225): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(227): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(227): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(229): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(229): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(231): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(231): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(233): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(233): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(235): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(235): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(237): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(237): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(239): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(239): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(241): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(241): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(243): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(243): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(245): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(245): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(247): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(247): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(249): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(249): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(251): Enumeration literal '0' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(251): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Error: Waveform2.vwf.vht(253): Enumeration literal '1' is not of type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: Waveform2.vwf.vht(253): (vcom-1499) Aggregate with a single element association must use named association.
+# ** Note: Waveform2.vwf.vht(757): VHDL Compiler exiting
+# End time: 11:22:15 on Mar 12,2024, Elapsed time: 0:00:00
+# Errors: 98, Warnings: 0
+# ** Error: c:/intelfpga_lite/22.1std/questa_fse/win64/vcom failed.
+# Executing ONERROR command at macro ./FlipFlopD_Demo.do line 4

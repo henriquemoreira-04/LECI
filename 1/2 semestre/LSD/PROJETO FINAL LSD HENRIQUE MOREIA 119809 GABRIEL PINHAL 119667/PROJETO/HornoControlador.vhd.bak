@@ -1,0 +1,98 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity HornoControlador is
+    port (
+        clk         : in  std_logic;
+        reset       : in  std_logic;
+        start       : in  std_logic;
+        key_inc     : in  std_logic;
+        key_dec     : in  std_logic;
+        sw1         : in  std_logic;
+        sw2         : in  std_logic;
+        heater_on   : out std_logic;
+        done        : out std_logic;
+        led_alert   : out std_logic
+    );
+end HornoControlador;
+
+architecture Structural of HornoControlador is
+    signal temp_set, td_set, tf_set, temp : std_logic_vector(7 downto 0);
+
+    component ControladorTemperatura
+        port (
+            clk       : in  std_logic;
+            reset     : in  std_logic;
+            set_temp  : in  std_logic_vector(7 downto 0);
+            temp      : out std_logic_vector(7 downto 0);
+            heater_on : out std_logic
+        );
+    end component;
+
+    component AjusteParametros
+        port (
+            clk         : in  std_logic;
+            reset       : in  std_logic;
+            key_inc     : in  std_logic;
+            key_dec     : in  std_logic;
+            sw1         : in  std_logic;
+            sw2         : in  std_logic;
+            temp_set    : out std_logic_vector(7 downto 0);
+            td_set      : out std_logic_vector(7 downto 0);
+            tf_set      : out std_logic_vector(7 downto 0)
+        );
+    end component;
+
+    component ControlAutomático
+        port (
+            clk        : in  std_logic;
+            reset      : in  std_logic;
+            start      : in  std_logic;
+            td_set     : in  std_logic_vector(7 downto 0);
+            tf_set     : in  std_logic_vector(7 downto 0);
+            temp_set   : in  std_logic_vector(7 downto 0);
+            temp       : in  std_logic_vector(7 downto 0);
+            heater_on  : out std_logic;
+            done       : out std_logic;
+            led_alert  : out std_logic
+        );
+    end component;
+
+begin
+    U1: ControladorTemperatura
+        port map (
+            clk => clk,
+            reset => reset,
+            set_temp => temp_set,
+            temp => temp,
+            heater_on => heater_on
+        );
+
+    U2: AjusteParametros
+        port map (
+            clk => clk,
+            reset => reset,
+            key_inc => key_inc,
+            key_dec => key_dec,
+            sw1 => sw1,
+            sw2 => sw2,
+            temp_set => temp_set,
+            td_set => td_set,
+            tf_set => tf_set
+        );
+
+    U3: ControlAutomático
+        port map (
+            clk => clk,
+            reset => reset,
+            start => start,
+            td_set => td_set,
+            tf_set => tf_set,
+            temp_set => temp_set,
+            temp => temp,
+            heater_on => heater_on,
+            done => done,
+            led_alert => led_alert
+        );
+end Structural;

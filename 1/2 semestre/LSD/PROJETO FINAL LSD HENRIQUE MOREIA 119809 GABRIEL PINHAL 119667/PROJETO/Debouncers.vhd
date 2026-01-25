@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Debouncers is
+    port (
+        clock          : in  std_logic;
+        reset_btn      : in  std_logic;
+        start_stop_btn : in  std_logic;
+        time_adjust_btn: in  std_logic;
+        key_dec        : in  std_logic;
+        reset_out      : out std_logic;
+        start_stop_out : out std_logic;
+        time_adjust_out: out std_logic;
+        key_dec_out    : out std_logic
+    );
+end Debouncers;
+
+architecture Behavioral of Debouncers is
+    signal reset_reg, start_stop_reg, time_adjust_reg, key_dec_reg : std_logic_vector(1 downto 0) := (others => '0');
+begin
+    process(clock)
+    begin
+        if rising_edge(clock) then
+            reset_reg <= reset_reg(0) & reset_btn;
+            start_stop_reg <= start_stop_reg(0) & start_stop_btn;
+            time_adjust_reg <= time_adjust_reg(0) & time_adjust_btn;
+            key_dec_reg <= key_dec_reg(0) & key_dec;
+        end if;
+    end process;
+
+    reset_out <= reset_reg(0) and not reset_reg(1);
+    start_stop_out <= start_stop_reg(0) and not start_stop_reg(1);
+    time_adjust_out <= time_adjust_reg(0) and not time_adjust_reg(1);
+    key_dec_out <= key_dec_reg(0) and not key_dec_reg(1);
+end Behavioral;

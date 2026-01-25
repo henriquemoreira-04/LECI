@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/henri/LSD/Aula04/PARTE3/simulation/qsim
+T_opt
+!s110 1712585862
+V>b;dHZNUg9XFmb42_l=jn2
+04 23 4 work FreqDivider_vlg_vec_tst fast 0
+=1-b48c9d022d13-6613fc85-32f-2cfc
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vFreqDivider
+Z2 !s110 1712585861
+!i10b 1
+!s100 :Wc_3Gz<``1P7VBBh?6nj1
+Ih<SL4@cU0SFjn@i8?hI`W1
+R0
+Z3 w1712585859
+8FreqDivider_Demo.vo
+FFreqDivider_Demo.vo
+!i122 0
+L0 32 1723
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z6 !s108 1712585861.000000
+!s107 FreqDivider_Demo.vo|
+!s90 -work|work|FreqDivider_Demo.vo|
+!i113 0
+Z7 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@freq@divider
+vFreqDivider_vlg_vec_tst
+R2
+!i10b 1
+!s100 Gb[5PFjSh@<>26BYYn_Uh0
+I>@aBPRWR]aLd2f65iO@P30
+R0
+R3
+8FreqDevider.vwf.vt
+FFreqDevider.vwf.vt
+!i122 1
+L0 30 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 FreqDevider.vwf.vt|
+!s90 -work|work|FreqDevider.vwf.vt|
+!i113 0
+R7
+R1
+n@freq@divider_vlg_vec_tst

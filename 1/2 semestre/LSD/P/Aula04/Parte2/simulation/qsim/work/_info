@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/OneDrive/Desktop/Uni 1-ano/LSD/Aula04/Parte2/simulation/qsim
+T_opt
+!s110 1710243652
+V32@Ybz2ZROP]QQ4f64O0h3
+04 21 14 work register8_vhd_vec_tst register8_arch 1
+=1-d039575dcd73-65f03f43-3b5-ff0
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Eregister8
+Z1 w1710243649
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z9 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 0
+R0
+Z10 8Register_Demo.vho
+Z11 FRegister_Demo.vho
+l0
+L37 1
+VVlE;3DEQD1QSeZ6g`]h7X1
+!s100 X5eG7YZL=f1^zzaD4<bWH1
+Z12 OL;C;2021.2;73
+32
+Z13 !s110 1710243651
+!i10b 1
+Z14 !s108 1710243651.000000
+Z15 !s90 -work|work|Register_Demo.vho|
+Z16 !s107 Register_Demo.vho|
+!i113 0
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 9 register8 0 22 VlE;3DEQD1QSeZ6g`]h7X1
+!i122 0
+l87
+L46 367
+VH8AcVO`WEdW0ZAnzTDkhm0
+!s100 ZfYTCQO?KC8=h49b[oXde3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 0
+R17
+R18
+Eregister8_vhd_vec_tst
+Z19 w1710243647
+R7
+R8
+!i122 1
+R0
+Z20 8Waveform.vwf.vht
+Z21 FWaveform.vwf.vht
+l0
+L32 1
+V<0FH[1`=PTlGok:DD5J_[0
+!s100 J69iBXek>Ja25:B71kB2f0
+R12
+32
+R13
+!i10b 1
+R14
+Z22 !s90 -work|work|Waveform.vwf.vht|
+Z23 !s107 Waveform.vwf.vht|
+!i113 0
+R17
+R18
+Aregister8_arch
+R7
+R8
+DEx4 work 21 register8_vhd_vec_tst 0 22 <0FH[1`=PTlGok:DD5J_[0
+!i122 1
+l49
+L34 1265
+V>lZO60n746]]I_EM`[R>a0
+!s100 aeXLGBGI=hW?OiC]<fYQo1
+R12
+32
+R13
+!i10b 1
+R14
+R22
+R23
+!i113 0
+R17
+R18

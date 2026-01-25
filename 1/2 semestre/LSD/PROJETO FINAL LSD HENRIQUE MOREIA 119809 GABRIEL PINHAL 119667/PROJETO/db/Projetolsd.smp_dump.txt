@@ -1,0 +1,6 @@
+
+State Machine - |HornoControlador|ControlAutomatico:U3|state
+Name state.DONE state.COOKING state.IDLE 
+state.IDLE 0 0 0 
+state.COOKING 0 1 1 
+state.DONE 1 0 1 

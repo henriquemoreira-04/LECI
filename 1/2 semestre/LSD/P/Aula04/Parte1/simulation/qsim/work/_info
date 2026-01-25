@@ -1,0 +1,193 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/tomas/OneDrive/Desktop/Uni 1-ano/LSD/Aula04/Parte1/simulation/qsim
+T_opt
+!s110 1710241563
+VUfVMB2Hg?PjcY^WV4@o2h3
+04 21 14 work flipflopd_vhd_vec_tst flipflopd_arch 1
+=1-d039575dcd73-65f0371a-253-2388
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+R1
+Eflipflopd
+Z2 w1710241559
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z4 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 2
+R1
+Z11 8FlipFlopD_Demo.vho
+Z12 FFlipFlopD_Demo.vho
+l0
+Z13 L37 1
+V]>>MC=HKmmzf9;[f=2]^[1
+!s100 akfCYNHcQP5mSh]9_7h4f2
+Z14 OL;C;2021.2;73
+32
+Z15 !s110 1710241561
+!i10b 1
+Z16 !s108 1710241561.000000
+Z17 !s90 -work|work|FlipFlopD_Demo.vho|
+Z18 !s107 FlipFlopD_Demo.vho|
+!i113 0
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 9 flipflopd 0 22 ]>>MC=HKmmzf9;[f=2]^[1
+!i122 2
+l70
+L47 115
+VXi7M`_E>jUC6LA[0BA@Pi0
+!s100 6de86ACbN^;aW;Wmd]Qo;2
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Eflipflopd_demo
+Z21 w1710242533
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+!i122 4
+R1
+R11
+R12
+l0
+R13
+V]77zB]OkT43`?zT99XRh33
+!s100 kik7hSMI^baY@1Dh[7ak`2
+R14
+32
+Z22 !s110 1710242535
+!i10b 1
+Z23 !s108 1710242535.000000
+R17
+R18
+!i113 0
+R19
+R20
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 14 flipflopd_demo 0 22 ]77zB]OkT43`?zT99XRh33
+!i122 4
+l66
+L45 98
+V70[6JIFa@n8P121IKA9z23
+!s100 `E5RGb6jz>KM9kVnh<YC81
+R14
+32
+R22
+!i10b 1
+R23
+R17
+R18
+!i113 0
+R19
+R20
+Eflipflopd_demo_vhd_vec_tst
+w1710242532
+R8
+R9
+!i122 5
+R1
+8Waveform2.vwf.vht
+FWaveform2.vwf.vht
+l0
+Z24 L32 1
+V8IMJZho[E=eF98RGY2SMW1
+!s100 C?AYLLUPH:0D@@]K1=[3>0
+R14
+32
+R22
+!i10b 1
+R23
+!s90 -work|work|Waveform2.vwf.vht|
+!s107 Waveform2.vwf.vht|
+!i113 0
+R19
+R20
+Eflipflopd_vhd_vec_tst
+Z25 w1710241557
+R8
+R9
+!i122 3
+R1
+Z26 8Waveform1.vwf.vht
+Z27 FWaveform1.vwf.vht
+l0
+R24
+V_hf]K[JUEnmKOT8_MlE`31
+!s100 B0D]Y`jPC@nc2_<D:OGZM1
+R14
+32
+R15
+!i10b 1
+R16
+Z28 !s90 -work|work|Waveform1.vwf.vht|
+Z29 !s107 Waveform1.vwf.vht|
+!i113 0
+R19
+R20
+Aflipflopd_arch
+R8
+R9
+DEx4 work 21 flipflopd_vhd_vec_tst 0 22 _hf]K[JUEnmKOT8_MlE`31
+!i122 3
+l51
+L34 676
+VO920B]I@KgYdWhFLF?gX13
+!s100 6oPKIFffRjYDVS_LWk^KX2
+R14
+32
+R15
+!i10b 1
+R16
+R28
+R29
+!i113 0
+R19
+R20

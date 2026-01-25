@@ -1,0 +1,199 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+!s11f MIXED_VERSIONS
+R0
+R0
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/henri/OneDrive/Escritorio/PROJETO/simulation/qsim
+T_opt
+!s110 1716846461
+VTDb2Xf`0Ya4zkQ2YEB??O3
+04 28 21 work hornocontrolador_vhd_vec_tst hornocontrolador_arch 1
+=1-b48c9d022d13-6654ff7c-2b7-5244
+Z2 !s124 OEM10U3 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2021.2;73
+R1
+T_opt1
+!s110 1716901355
+Vf@B^VW;L`e@MQKl4BfR9G2
+04 28 4 work HornoControlador_vlg_vec_tst fast 0
+=1-b48c9d022d13-6655d5ea-30b-278c
+R2
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+R3
+n@_opt1
+R4
+vhard_block
+Z5 !s110 1716901353
+!i10b 1
+!s100 ]lgedV:9f3e=a3Hg?ci4c0
+I8nZWG]FEjG]>3DMnLVN>n2
+R1
+Z6 w1716901350
+Z7 8Projetolsd.vo
+Z8 FProjetolsd.vo
+!i122 6
+L0 13078 34
+Z9 VDg1SIo80bB@j0V0VzS_@n1
+Z10 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z11 !s108 1716901353.000000
+Z12 !s107 Projetolsd.vo|
+Z13 !s90 -work|work|Projetolsd.vo|
+!i113 0
+Z14 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vHornoControlador
+R5
+!i10b 1
+!s100 :>OadSFX>;T<NRm=FBdDU3
+IfK4M_Zici30=aO^CY823b1
+R1
+R6
+R7
+R8
+!i122 6
+L0 32 13045
+R9
+R10
+r1
+!s85 0
+31
+R11
+R12
+R13
+!i113 0
+R14
+R3
+n@horno@controlador
+Ehornocontrolador
+Z15 w1716846456
+Z16 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z17 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z18 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z19 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z20 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z21 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z22 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z23 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 4
+R1
+Z24 8Projetolsd.vho
+Z25 FProjetolsd.vho
+l0
+L80 1
+V]@g<Z3d8UXa9j6`CfLh0g2
+!s100 c:zC<PZO3PhV7VjE3N=UQ3
+Z26 OL;C;2021.2;73
+32
+Z27 !s110 1716846459
+!i10b 1
+Z28 !s108 1716846459.000000
+Z29 !s90 -work|work|Projetolsd.vho|
+Z30 !s107 Projetolsd.vho|
+!i113 0
+Z31 o-work work
+Z32 tExplicit 1 CvgOpt 0
+Astructure
+R16
+R17
+R18
+R19
+R20
+R21
+R22
+R23
+DEx4 work 16 hornocontrolador 0 22 ]@g<Z3d8UXa9j6`CfLh0g2
+!i122 4
+l705
+L161 9001
+V3dVQVASj]cIOEGVXg_h=e2
+!s100 V37NfQWNV>e2j;2zfk0V]2
+R26
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 0
+R31
+R32
+Ehornocontrolador_vhd_vec_tst
+Z33 w1716846455
+R21
+R22
+!i122 5
+R1
+Z34 8Waveform.vwf.vht
+Z35 FWaveform.vwf.vht
+l0
+L32 1
+V7AII12V_h];Y6KH3`MJEH1
+!s100 o:fGKg72chbl0<T[UGgF]1
+R26
+32
+R27
+!i10b 1
+R28
+Z36 !s90 -work|work|Waveform.vwf.vht|
+Z37 !s107 Waveform.vwf.vht|
+!i113 0
+R31
+R32
+Ahornocontrolador_arch
+R21
+R22
+DEx4 work 28 hornocontrolador_vhd_vec_tst 0 22 7AII12V_h];Y6KH3`MJEH1
+!i122 5
+l65
+L34 103
+V2P1I6I>gY8;dP>k1a];:Y3
+!s100 :7EHZ=jC7XCokX7KoGPoH3
+R26
+32
+R27
+!i10b 1
+R28
+R36
+R37
+!i113 0
+R31
+R32
+vHornoControlador_vlg_vec_tst
+R5
+!i10b 1
+!s100 G621bDCG8Oc_:`oQfe1381
+I4nIW4Uj3hnCYFLaY?67gm1
+R1
+w1716901349
+8Waveform.vfw.vwf.vt
+FWaveform.vfw.vwf.vt
+!i122 7
+L0 30 81
+R9
+R10
+r1
+!s85 0
+31
+R11
+!s107 Waveform.vfw.vwf.vt|
+!s90 -work|work|Waveform.vfw.vwf.vt|
+!i113 0
+R14
+R3
+n@horno@controlador_vlg_vec_tst

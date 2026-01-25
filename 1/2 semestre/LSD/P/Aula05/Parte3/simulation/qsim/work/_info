@@ -1,0 +1,117 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/tomas/OneDrive/Desktop/Uni 1-ano/LSD/Aula05/Parte3/simulation/qsim
+T_opt
+!s110 1710846884
+VjIJX3I;HXRMIAf2?Q>nfG3
+04 18 11 work timern_vhd_vec_tst timern_arch 1
+=1-d039575dcd73-65f973a3-2c2-83c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim +acc
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Etimern
+Z2 w1710846880
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 gn]m8U<PzXZH32IDQ4:hj3
+Z4 DPx10 cycloneive 21 cycloneive_components 0 22 cSe5`^NYM;IRV3WNS^Q7a2
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 ^oS01<AhH<ZbI@CNcPk2V0
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 Y19K[Kjfb73Y`YfbP9Kf30
+!i122 2
+R1
+Z11 8TimerN_Demo.vho
+Z12 FTimerN_Demo.vho
+l0
+L37 1
+VZDj=eNK]V_WeMfjhSbG2d0
+!s100 IMNOGniU3LgE`ESVH7>C`1
+Z13 OL;C;2021.2;73
+32
+Z14 !s110 1710846882
+!i10b 1
+Z15 !s108 1710846882.000000
+Z16 !s90 -work|work|TimerN_Demo.vho|
+Z17 !s107 TimerN_Demo.vho|
+!i113 0
+Z18 o-work work
+Z19 tExplicit 1 CvgOpt 0
+Astructure
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 6 timern 0 22 ZDj=eNK]V_WeMfjhSbG2d0
+!i122 2
+l181
+L47 1932
+VVQC5YhKn<4U[X:`PL`?he3
+!s100 5^_Ke]HSGn:Rz2GK6ebWC3
+R13
+32
+R14
+!i10b 1
+R15
+R16
+R17
+!i113 0
+R18
+R19
+Etimern_vhd_vec_tst
+Z20 w1710846879
+R8
+R9
+!i122 3
+R1
+Z21 8Waveform.vwf.vht
+Z22 FWaveform.vwf.vht
+l0
+L32 1
+VUEfneR=TC6:]_fdR9Y>B40
+!s100 Tzj4F=[OKR53c8dO3KAMA3
+R13
+32
+R14
+!i10b 1
+R15
+Z23 !s90 -work|work|Waveform.vwf.vht|
+Z24 !s107 Waveform.vwf.vht|
+!i113 0
+R18
+R19
+Atimern_arch
+R8
+R9
+DEx4 work 18 timern_vhd_vec_tst 0 22 UEfneR=TC6:]_fdR9Y>B40
+!i122 3
+l51
+L34 65
+VZo>zghM6]AQGjVm__4ZYW3
+!s100 I1l7Z8:Z@VmN1gjC0=;hJ1
+R13
+32
+R14
+!i10b 1
+R15
+R23
+R24
+!i113 0
+R18
+R19

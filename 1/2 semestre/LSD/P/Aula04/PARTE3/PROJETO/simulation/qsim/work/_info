@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/henri/LSD/Aula04/PARTE3/PROJETO/simulation/qsim
+T_opt
+Z1 !s110 1710776154
+VZVzok;GVdg@T;9BJSXQW41
+04 24 4 work CounterDown4_vlg_vec_tst fast 0
+=1-b48c9d022d13-65f85f5a-14d-325c
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vCounterDown4
+R1
+!i10b 1
+!s100 S@QaGaZ30>XU;n4Db7h4J3
+IXzazGEQXUhPga0Fi^Waf40
+R0
+w1710776153
+8Counter_Demo.vo
+FCounter_Demo.vo
+!i122 2
+L0 32 231
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1710776153.000000
+!s107 Counter_Demo.vo|
+!s90 -work|work|Counter_Demo.vo|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@counter@down4
+vCounterDown4_vlg_vec_tst
+R1
+!i10b 1
+!s100 z_<T<;@ECZNADC109eNXm2
+I90o<<>Km2jm`6L1Th4m1=2
+R0
+w1710776152
+8Counter_Demo.vwf.vt
+FCounter_Demo.vwf.vt
+!i122 3
+L0 30 26
+R3
+R4
+r1
+!s85 0
+31
+!s108 1710776154.000000
+!s107 Counter_Demo.vwf.vt|
+!s90 -work|work|Counter_Demo.vwf.vt|
+!i113 0
+R5
+R2
+n@counter@down4_vlg_vec_tst
