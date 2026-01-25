@@ -1,0 +1,127 @@
+// Helper file for SIC Lab on Symmetric Cryptography
+
+#include <stdio.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <memory.h>
+#include <assert.h>
+
+#include "aes.h"
+#include "ecb.h"
+#include "cbc.h"
+#include "padding.h"
+
+void
+aes128_block_test_padding()
+{
+    const uint8_t tv_key[]    = {0xED, 0xFD, 0xB2, 0x57, 0xCB, 0x37, 0xCD, 0xF1, 0x82, 0xC5, 0x45, 0x5B, 0x0C, 0x0E, 0xFE, 0xBB};
+    const uint8_t tv_plain[]  = {0x00};
+    const uint8_t tv_cipher[] = {0x1C, 0x8C, 0xF2, 0x3A, 0x59, 0x99, 0xDC, 0x4B, 0x8A, 0xE7, 0xB5, 0x2F, 0x8C, 0x47, 0x12, 0x25};
+
+    // space for outputs
+    uint8_t computed_cipher[sizeof(tv_cipher)];
+    uint8_t computed_plain[sizeof(tv_cipher)];
+
+    // allocate an extra block for the plaintext to assume the worst case for padding
+    uint8_t * padding_plain = malloc( sizeof(tv_plain) + AES128_BLOCK_SIZE );
+
+    memcpy( padding_plain, tv_plain, sizeof(tv_plain) );
+    int padded_size = add_padding( padding_plain, sizeof(tv_plain) );
+    assert( padded_size == AES128_BLOCK_SIZE );
+
+    void * ctx = aes128_init_context( tv_key );
+    aes128_block_enc( ctx, padding_plain, computed_cipher );
+    aes128_block_dec( ctx, computed_cipher, computed_plain );
+
+    // tests
+    int original_size = rm_padding( computed_plain, AES128_BLOCK_SIZE );
+    assert( original_size == sizeof(tv_plain) );
+    assert( memcmp( tv_cipher, computed_cipher, AES128_BLOCK_SIZE ) == 0 );
+    assert( memcmp( tv_plain, computed_plain, sizeof(tv_plain) ) == 0 );
+
+    // done
+    free( padding_plain );
+    aes128_free_context( &ctx );
+}
+
+void
+aes128_ecb_test_padding()
+{
+    const uint8_t tv_key[]    = {0x77, 0x23, 0xD8, 0x7D, 0x77, 0x3A, 0x8B, 0xBF, 0xE1, 0xAE, 0x5B, 0x08, 0x12, 0x35, 0xB5, 0x66};
+    const uint8_t tv_plain[]  = {0x1B, 0x0A, 0x69, 0xB7, 0xBC, 0x53, 0x4C, 0x16, 0xCE, 0xCF, 0xFA, 0xE0, 0x2C, 0xC5, 0x32, 0x31, 0x90, 0xCE, 0xB4, 0x13, 0xF1, 0xDB, 0x3E, 0x9F, 0x0F, 0x79, 0xBA, 0x65, 0x4C, 0x54, 0xB6, 0x01};
+    const uint8_t tv_cipher[] = {0xAD, 0x5B, 0x08, 0x95, 0x15, 0xE7, 0x82, 0x10, 0x87, 0xC6, 0x16, 0x52, 0xDC, 0x47, 0x7A, 0xB1, 0x3E, 0xE2, 0xE6, 0xDC, 0xBC, 0x92, 0x14, 0x09, 0xCD, 0x70, 0x60, 0xEA, 0x9D, 0x29, 0x45, 0x79, 0x2C, 0xB9, 0x0E, 0x79, 0x12, 0xC7, 0xC4, 0x26, 0x62, 0xA6, 0x51, 0xDB, 0x32, 0xA3, 0x13, 0xA5};
+
+    // Calcular tamaño con padding (31 bytes + 1 byte padding = 32 bytes = 2 bloques)
+    int padded_size = sizeof(tv_plain) + (AES128_BLOCK_SIZE - (sizeof(tv_plain) % AES128_BLOCK_SIZE));
+    
+    uint8_t *padding_plain = malloc(padded_size);
+    uint8_t *computed_cipher = malloc(padded_size);
+    uint8_t *computed_plain = malloc(padded_size);
+
+    memcpy(padding_plain, tv_plain, sizeof(tv_plain));
+    int new_size = add_padding(padding_plain, sizeof(tv_plain));
+
+    void *ctx = aes128_init_context(tv_key);
+    aes128_ecb_enc(ctx, padding_plain, new_size, computed_cipher);
+    aes128_ecb_dec(ctx, computed_cipher, new_size, computed_plain);
+
+    // Tests
+    assert(memcmp(tv_cipher, computed_cipher, sizeof(tv_cipher)) == 0);
+    int original_size = rm_padding(computed_plain, new_size);
+    assert(original_size == sizeof(tv_plain));
+    assert(memcmp(tv_plain, computed_plain, sizeof(tv_plain)) == 0);
+
+    free(padding_plain);
+    free(computed_cipher);
+    free(computed_plain);
+    aes128_free_context(&ctx);
+}
+
+void
+aes128_cbc_test_padding()
+{
+    const uint8_t tv_key[]    = {0x07, 0x00, 0xD6, 0x03, 0xA1, 0xC5, 0x14, 0xE4, 0x6B, 0x61, 0x91, 0xBA, 0x43, 0x0A, 0x3A, 0x0C};
+    const uint8_t tv_iv[]     = {0xAA, 0xD1, 0x58, 0x3C, 0xD9, 0x13, 0x65, 0xE3, 0xBB, 0x2F, 0x0C, 0x34, 0x30, 0xD0, 0x65, 0xBB};
+    const uint8_t tv_plain[]  = {0x06, 0x8B, 0x25, 0xC7, 0xBF, 0xB1, 0xF8, 0xBD, 0xD4, 0xCF, 0xC9, 0x08, 0xF6, 0x9D, 0xFF, 0xC5, 0xDD, 0xC7, 0x26, 0xA1, 0x97, 0xF0, 0xE5, 0xF7};
+    const uint8_t tv_cipher[] = {0xC4, 0xDC, 0x61, 0xD9, 0x72, 0x59, 0x67, 0xA3, 0x02, 0x01, 0x04, 0xA9, 0x73, 0x8F, 0x23, 0x86, 0xB2, 0xA3, 0xDE, 0xAC, 0x15, 0x40, 0xE3, 0x3E, 0x42, 0xC5, 0xA1, 0x9E, 0x60, 0x15, 0x2C, 0xE4};
+
+    // 24 bytes necesitan 8 bytes de padding para llegar a 32 bytes (2 bloques)
+    int padded_size = sizeof(tv_plain) + (AES128_BLOCK_SIZE - (sizeof(tv_plain) % AES128_BLOCK_SIZE));
+    uint8_t *padding_plain = malloc(padded_size);
+    uint8_t *computed_cipher = malloc(padded_size);
+    uint8_t *computed_plain = malloc(padded_size);
+
+    memcpy(padding_plain, tv_plain, sizeof(tv_plain));
+    int new_size = add_padding(padding_plain, sizeof(tv_plain));
+
+    void *ctx = aes128_init_context(tv_key);
+    aes128_cbc_enc(ctx, tv_iv, padding_plain, new_size, computed_cipher);
+    aes128_cbc_dec(ctx, tv_iv, computed_cipher, new_size, computed_plain);
+
+    // Tests
+    assert(memcmp(tv_cipher, computed_cipher, sizeof(tv_cipher)) == 0);
+    int original_size = rm_padding(computed_plain, new_size);
+    assert(original_size == sizeof(tv_plain));
+    assert(memcmp(tv_plain, computed_plain, sizeof(tv_plain)) == 0);
+
+    free(padding_plain);
+    free(computed_cipher);
+    free(computed_plain);
+    aes128_free_context(&ctx);
+}
+
+int
+main()
+{
+    printf( "Test padding & unpadding with AES simple block encryption/decryption\n" );
+    aes128_block_test_padding ();
+
+    printf( "Test padding & unpadding with AES ECB encryption/decryption\n" );
+    aes128_ecb_test_padding ();
+
+    printf( "Test padding & unpadding with AES CBC encryption/decryption\n" );
+    aes128_cbc_test_padding ();
+
+    printf( "All padding tests passed!\n" );
+    return 0;
+}

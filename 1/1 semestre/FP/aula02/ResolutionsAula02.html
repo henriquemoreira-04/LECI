@@ -1,0 +1,76 @@
+<p>Esta página apresenta uma resolução comentada do exercício Aula02-3.
+<img style="vertical-align:middle"
+src="https://latex.codecogs.com/png.latex?%5Cdisplaystyle%20" alt=""
+title="" class="math display" /></p>
+<h2 id="problema">Problema</h2>
+<blockquote>
+<p>Escreva um programa que dados três valores, imprime o maior deles.
+<em>Consegue resolver só com duas comparações?</em></p>
+</blockquote>
+<h2 id="análise">Análise</h2>
+<p>Temos três valores dados, a que podemos chamar n1, n2, e n3.
+Pretendemos um resultado, a que podemos chamar mx. Queremos<br> \( mx=n1
+\)   se   \( n1 \geq n2 \wedge n1 \geq n3 \),<br> \( mx=n2 \)   se   \(
+n2 \geq n1 \wedge n2 \geq n3 \),<br> \( mx=n3 \)   se   \( n3 \geq n1
+\wedge n3 \geq n2 \).<br></p>
+<p>Uma tradução direta para Python, com três instruções <code>if</code>,
+funciona, mas requer 6 comparações.</p>
+<p>Facilmente se percebe que se a primeira condição for falsa, então o
+máximo só pode ser n2 ou n3, por isso podemos usar
+<code>if-elif-else</code> e reduzir a 3 comparações.</p>
+<pre><code>if n1 &gt;= n2 and n1 &gt;= n3:
+    mx = n1
+elif n2 &gt;= n3:
+    mx = n2
+else:
+    mx = n3</code></pre>
+<p>No entanto, a forma mais económica de resolver resulta do seguinte
+raciocínio:</p>
+<ol type="1">
+<li>Assim que obtemos o primeiro valor, podemos dizer que <em>até
+agora</em> esse é o máximo, ou seja: \(mx = n1\).</li>
+<li>Quando recebemos o segundo valor, esse passa a ser novo máximo se e
+só se \(n2 &gt; mx\).</li>
+<li>Quando recebemos o terceiro valor, fazemos o mesmo.</li>
+</ol>
+<p>Ou seja,</p>
+<pre><code>mx = n1
+if n2 &gt; mx:
+    mx = n2
+if n3 &gt; mx:
+    mx = n3</code></pre>
+<p>Este algoritmo é simples e requer menos comparações. Além disso, é
+muito fácil de generalizar para mais números: cada número extra só vai
+requerer mais uma comparação e uma atribuição.</p>
+<h2 id="solução">Solução</h2>
+<p>Juntando as intruções para input/output, obtemos:</p>
+<pre><code class="python"># max3.py
+n1 = float(input("n1? "))
+n2 = float(input("n2? "))
+n3 = float(input("n3? "))
+
+mx = n1
+if n2 > mx:
+    mx = n2
+if n3 > mx:
+    mx = n3
+
+print(mx)
+</code></pre>
+<p>Se intercalarmos os inputs com os ifs, até podemos reutilizar uma
+única variável para os valores introduzidos:</p>
+<pre><code class="python"># max3.py
+num = float(input("n1? "))
+mx = num                     # mx is the maximum so far
+
+num = float(input("n2? "))
+if num > mx:
+    mx = num                 # update mx only if latest num is larger
+
+num = float(input("n3? "))
+if num > mx:
+    mx = num                 # update mx only if latest num is larger
+
+print(mx)
+</code></pre>
+<p>JMR 2019</p>

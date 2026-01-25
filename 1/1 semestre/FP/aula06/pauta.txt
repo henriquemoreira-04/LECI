@@ -1,0 +1,59 @@
+NUMERO                        NOME                        NOTA
+  8540           VITOR MANUEL ANICETO PALHINHA            16.27
+  9419                MARIO JORGE MANECAS                  8.90
+  9634              ANA PAULA ARANTES MORAIS              15.00
+ 10247           JOSE DOMINGOS MARTINS LOURENCO           11.87
+ 10679       JOAO MANUEL MOREIRA CONCEICAO ANDRADE        12.47
+ 11885          VASCO JOAO NOGUEIRA COSTA ALVES           14.27
+ 19855              HENRIQUE EDUARDO ALMEIDA              12.27
+ 23973           BARBARA MARTINS BASTIAO PIRES             8.20
+ 24983     SANDRA ELISABETE PINHEIRO MORGADO CORREIA       8.37
+ 26095                JOAO CARLOS DA COSTA                 9.80
+ 28939      JOANA INES LIMA PEREIRA DOS SANTOS MOTA       13.20
+ 29117            CLAUDIA MARIA SILVA CAMACHO             11.63
+ 29826       MARCOS RAFAEL FORTUNA ALMEIDA MARTINS         9.20
+ 30186         HUGO RICARDO SERRA CONCEICAO CUNHA         11.77
+ 30759       ELISABETE CLAUDIA SANTOS SILVA SOARES        16.50
+ 33955   NUNO JOSE SILVA DOS SANTOS MAGALHAES DA COSTA     9.47
+ 34385               NARCISO RESENDE SILVA                 8.07
+ 34601               ERIC DE MELO FERREIRA                11.83
+ 34801             ABEL LUIS DIAS CARAPICHOSO             15.70
+ 34865          PEDRO MANUEL VELEIRINHO MARTINS           15.20
+ 35007           SANDRA CRISTINA LEAL DA GRACA            14.33
+ 36114                 JOSE LINO FERREIRA                 11.27
+ 36129                SARA LEITAO MARQUES                 10.97
+ 36406               MARIANA PEREIRA VIEIRA               14.40
+ 36700            DAVID JOAO CASTILLO CARVALHO            10.23
+ 37347                ROBERT DE FERNANDES                 11.20
+ 38063          RUI MIGUEL ALVES FERNANDES PALHA          11.33
+ 38461        JOSE MANUEL VIEIRA DE ALMEIDA RAMOS         15.17
+ 38569         JOAO GONCALO LAGARINHOS FELGUEIRAS          9.50
+ 38873           SARA CRISTINA HENRIQUES LOPES             7.03
+ 39065      MIGUEL ANTUNES RODRIGUES FONSECA RIBEIRO       8.27
+ 39256               SALOME SANTOS PEREIRA                14.07
+ 39313               DIOGO MANUEL DA CORTE                13.90
+ 39442                 WING LUEN PINGUELO                 10.37
+ 39450           RUI BARBOSA SOARES FIGUEIREDO            12.87
+ 39652              FABIO ANDRE SABINO REAL               11.40
+ 39840        JOAO FILIPE MAGALHAES CARVALHO PINTO        17.73
+ 40301         FILIPE MIGUEL FIGUEIREDO DA SILVA           9.50
+ 40747              JOEL DOS SANTOS MIRANDA               17.03
+ 41084        RICARDO JORGE MOREIRA SILVA MACHADO         11.37
+ 41247                 DIOGO FRANCO CRUZ                  11.50
+ 41387            RICARDO EMANUEL AMARAL VARAO            14.93
+ 42003            LUIS CARLOS FIGUEIREDO PAULO            16.63
+ 42206               MARTA ISABEL DE SOUSA                11.17
+ 42304                 JOAO PEDRO PEREIRA                 17.30
+ 42372             RITA DANIELA VENTURA REAL              16.40
+ 42413               SERGIO FILIPE MARTINS                 9.03
+ 42518           BRUNO FILIPE AMARO DOS SANTOS            14.90
+ 42576         TIAGO RAFAEL PEREIRA MARQUES PISCO         14.47
+ 42608           HUGO BORGES SILVA SANTOS LOPES           16.33
+ 42709                   DIOGO TRIBUNA                    11.57
+ 42717                EDUARDO AIRES GANDRA                 9.27
+ 42738      RICARDO ANDRADE SILVEIRA MONTEIRO AMARAL      13.50
+ 42821              RICARDO MIGUEL MONTEIRO                6.60
+ 42847             NELSON MIGUEL BREDA COELHO             11.07
+ 43021             NUNO MIGUEL MOGAS DA SILVA             14.93
+ 43222                  MARCO RODRIGUES                   10.30
+ 43267                ELTON MONTEIRO GOMES                12.00
