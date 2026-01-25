@@ -1,0 +1,60 @@
+set pcname Aires
+dhcp
+
+set pcname Taurus
+ip 203.8.91.2 203.8.91.1 27
+ip 2002:a091:bc11::3/64
+ip dns 203.8.91.122
+
+set pcname Gemini
+ip 172.28.12.66 172.28.12.65 26
+ip 2002:a091:bc11:1::2/64
+ip dns 203.8.91.122
+
+set pcname Cancer
+dhcp
+
+set pcname Leo
+ip 203.8.91.34 203.8.91.33 27
+ip 2002:a091:bc11:1::4/64
+ip dns 203.8.91.122
+
+set pcname Pisces
+ip 203.8.91.66 203.8.91.65 28
+ip 2002:a091:bc11:100::4/64
+ip dns 203.8.91.122
+
+set pcname Aquarius
+ip 203.8.91.98 203.8.91.97 28
+ip 2002:a091:bc11:101::4/64
+ip dns 203.8.91.122
+
+set pcname Capricornius
+ip 203.8.91.114 203.8.91.113 29
+ip 2002:a091:bc11:102::2/64
+ip dns 203.8.91.122
+
+set pcname Sagittarius
+dhcp
+
+set pcname Scorpius
+ip 172.28.12.34 172.28.12.33 24
+ip 2002:a091:bc11:101::2/64
+ip dns 203.8.91.122
+
+set pcname Libra
+dhcp
+
+set pcname Virgo
+ip 172.28.12.130 172.28.12.129 26
+ip 2002:a091:bc11:100::2/64
+ip dns 203.8.91.122
+
+
+ip horóscopo VM 
+203.8.91.122 / 30  GW 203.9.91.121 
+IPV6 
+2002:A091:BC11:2::2 /64 GW 2002:A091:BC11:2::1
+
+
+
