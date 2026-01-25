@@ -1,0 +1,55 @@
+RESUMEN DE PROGRESO Y CONFIGURACIÓN DEL ENTORNO (SIC - PROYECTO)
+
+
+B. Estructura del Código (Refactorización):
+   - common/protocol.py: Se reescribió completamente.
+     * ANTES: Usaba JSON (ineficiente para BLE) y faltaban UUIDs.
+     * AHORA: Usa 'struct' (formato binario compacto), incluye los UUIDs obligatorios y maneja NIDs de 128 bits correctamente.
+   
+   - common/ble_driver.py: Se creó desde cero.
+     * Funciona como wrapper de la librería 'simplepyble'.
+     * Permite seleccionar el dongle específico ('hci0' o 'hci1').
+     * Maneja el escaneo, conexión y envío de bytes crudos.
+
+   - node/main_node.py: Se implementó la lógica inicial del Nodo.
+     * Máquina de estados: Desconectado -> Escaneando -> Conectando.
+     * Ya es capaz de tomar control del hardware y buscar dispositivos.
+
+--- 2. COSAS QUE SE INSTALARON (REQUISITOS) ---
+
+Para que el código funcione en vuestras máquinas (VM o Nativas), debéis instalar lo siguiente:
+
+1. Dependencias del Sistema (Necesarias para compilar librerías de Bluetooth):
+   $ sudo apt update
+   $ sudo apt install python3-pip libdbus-1-dev libglib2.0-dev -y
+
+2. Librería Python del Proyecto (simplepyble):
+   $ pip3 install simplepyble --break-system-packages
+
+   (Nota: Usamos --break-system-packages porque en Kali/Ubuntu nuevos pip bloquea instalaciones globales, y esto es más rápido que configurar entornos virtuales por ahora).
+
+--- 3. CÓMO PROBAR ---
+
+Ejecutar desde la raíz del proyecto para ver si detecta vuestro dongle USB:
+   $ python3 testnode.py
+
+Si veis "[BLE] Hardware ativo: hci0", todo está correcto.
+
+
+cree dos programas de teste , puede que despues se pueden eliminar pero yo lo hice asi , pero buneo este es un boceto 
+
+
+
+RESUMEN RÁPIDO DEL PROGRESO
+
+1. LO QUE YA ESTÁ HECHO:
+   - El "Idioma" (Common): Reemplacé el protocolo JSON por binario (struct) para que sea rápido y compatible con los requisitos del PDF. Ya tiene los UUIDs para que los dispositivos se reconozcan.
+   - El Hardware (Driver): Creé el código que controla el dongle USB ('hci0'/'hci1') y permite escanear/enviar datos.
+   - El Nodo (Cliente): Ya tiene "cerebro". Arranca, toma control del hardware y se pone a buscar red (estado SCANNING).
+
+2. ESTADO ACTUAL:
+   - El Nodo funciona y escanea, pero no se conecta con nadie porque nadie le responde.
+
+3. LO QUE FALTA (PARA VOSOTROS):
+   - El Sink (Servidor): Necesitamos el código del Sink ('sync/main_sink.py') para que el Nodo tenga a quién conectarse.
+   - Seguridad: Falta implementar la parte de certificados y claves (carpeta 'support') para que la conexión sea segura como pide el proyecto.
