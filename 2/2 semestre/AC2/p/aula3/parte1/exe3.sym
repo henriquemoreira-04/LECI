@@ -1,0 +1,16 @@
+GAS LISTING exe3.s 			page 1
+
+
+DEFINED SYMBOLS
+              exe3.s:6      *ABS*:000000000000bf88 ADDRBASEHI
+              exe3.s:7      *ABS*:0000000000006100 TRISE
+              exe3.s:8      *ABS*:0000000000006120 LATE
+              exe3.s:9      *ABS*:0000000000006040 TRISB
+              exe3.s:10     *ABS*:0000000000006050 PORTB
+              exe3.s:11     *ABS*:00000000000060c0 TRISD
+              exe3.s:12     *ABS*:00000000000060d0 PORTD
+              exe3.s:19     .text:0000000000000000 main
+              exe3.s:33     .text:000000000000001c while
+              exe3.s:52     .text:0000000000000040 endwhile
+
+NO UNDEFINED SYMBOLS

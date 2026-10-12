@@ -1,0 +1,19 @@
+GAS LISTING exe7.s 			page 1
+
+
+DEFINED SYMBOLS
+              exe7.s:5      *ABS*:000000000000bf88 ADDRBASEHI
+              exe7.s:6      *ABS*:0000000000006100 TRISE
+              exe7.s:7      *ABS*:0000000000006120 LATE
+              exe7.s:8      *ABS*:0000000000006040 TRISB
+              exe7.s:9      *ABS*:0000000000006050 PORTB
+              exe7.s:11     *ABS*:000000000000000b READ_CORE_TIMER
+              exe7.s:12     *ABS*:000000000000000c RESET_CORE_TIMER
+              exe7.s:18     .text:0000000000000000 main
+              exe7.s:37     .text:0000000000000020 while
+              exe7.s:50     .text:000000000000003c delay
+              exe7.s:77     .text:0000000000000080 jonr
+              exe7.s:64     .text:0000000000000068 jonl
+              exe7.s:89     .text:0000000000000094 endcounter
+
+NO UNDEFINED SYMBOLS

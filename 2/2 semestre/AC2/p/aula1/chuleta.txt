@@ -1,0 +1,14 @@
+se compila con 
+pccompile prog.s
+
+se transfiere el programa con 
+
+ldpic32 prog.hex
+
+dar reset
+
+despues pterm 
+
+dar reset 
+
+

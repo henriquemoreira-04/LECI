@@ -1,0 +1,22 @@
+GAS LISTING exep24.s 			page 1
+
+
+DEFINED SYMBOLS
+            exep24.s:1      *ABS*:000000000000000c resetCoreTimer
+            exep24.s:2      *ABS*:000000000000000b readCoreTimer
+            exep24.s:3      *ABS*:0000000000000006 printInt
+            exep24.s:4      *ABS*:0000000000000003 putChar
+            exep24.s:5      *ABS*:0000000000000001 inkey
+            exep24.s:14     .text:0000000000000000 main
+            exep24.s:35     .text:0000000000000038 loop
+            exep24.s:83     .text:00000000000000d4 check_status
+            exep24.s:66     .text:00000000000000b4 set_fast
+            exep24.s:70     .text:00000000000000bc set_normal
+            exep24.s:74     .text:00000000000000c4 set_stop
+            exep24.s:78     .text:00000000000000cc set_run
+            exep24.s:161    .text:00000000000001c4 delay
+            exep24.s:136    .text:0000000000000168 check_cnt1
+            exep24.s:143    .text:0000000000000194 end_loop
+            exep24.s:169    .text:00000000000001d4 wait_delay
+
+NO UNDEFINED SYMBOLS

@@ -1,0 +1,11 @@
+Calcular el tiempo maximo 
+
+
+¿Cuál es el tiempo máximo que esta función delay() puede esperar antes de fallar?"
+
+el problema de los registroa en mips son de 32 bits , osea que el numero mas grande es asi 4 mil millones 
+la duncion multiplica el K * ms . si el resultado de esa multiplicacion es mayor tendra overflow 
+y la funcion va a fallar 
+
+Formula = 20.000 * ms < 4 mil millones 
+4,294,967,295/20.000 = 214.748 ms

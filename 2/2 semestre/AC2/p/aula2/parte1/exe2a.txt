@@ -1,0 +1,20 @@
+en el ejercicio 2 quiero crer una herramienta
+para poder hacer pausas 
+
+ahora ellos quieren que cree delay donde las pausas se pedan hacer de cualquier duracion (1ms,500 etc)
+
+calcular la constante de K 
+"¿Qué valor debe tener K para que si pido 1 ms, el temporizador cuente exactamente 1 ms?"
+
+mi coretimer funciona a 20MHz osea 20.000.000 cuenta ticks por segundo
+
+regla de res 
+
+1 segundo = 20.000.000 ticks 
+
+1 segundo = 1000 ms 
+
+1 milisegundo = 20.000.000 / 1000 = 20.000
+
+K = 20.000
+para que el temporizador espere 1 ms debe contar 20.000 ticks 

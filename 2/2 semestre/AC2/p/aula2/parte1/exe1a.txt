@@ -1,0 +1,16 @@
+aqui el ejercicico lo que quiero es conseguir hacer las pausar a mano
+calculando la frecuencia a la cual lo suelen hacer 
+
+
+queremos saber la frecuencia de incremento del variable counter 
+
+para la frecuencia primero debemos de saber el periodo (el tiempo que tarda el whie de espera)
+
+el temporizador por segundo hace 20.000.000 ticks en 1 segundo
+el codigo dice que espera 200.000
+
+T = valor esperado / frecuencia timer (20MHZ) = 1/100 = 0.01
+
+F = 1/T = 1/0,01 = 100 Hz
+
+la frecuencia es de 100 Hz
