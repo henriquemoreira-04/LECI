@@ -1,0 +1,89 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+}
+nav {
+    background-color: black;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin-right: 10px;
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+nav ul li:last-child {
+    border-right: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+h1 {
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+h2 {
+    color: salmon;
+    font-style: italic;
+}
+.divider {
+    border: none;
+    height: 5px;
+    background-color: lightblue;
+    margin: 10px 0;
+}
+p {
+    font-size: 16px;
+}
+.bold {
+    font-weight: bold;
+}
+.underline {
+    text-decoration: underline;
+}
+.purple {
+    color: purple;
+    font-weight: bold;
+}
+a {
+    color: purple;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}
+.copyright {
+    color: red;
+    font-size: 18px;
+}
+
+/* Estilos específicos para a hiperligação da UA */
+#ua-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+#ua-link:hover {
+    font-style: italic;
+    color: orange;
+    background-color: green;
+}

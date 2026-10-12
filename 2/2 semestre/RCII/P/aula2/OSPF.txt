@@ -1,0 +1,118 @@
+OSPF 
+
+router 1 
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/1
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write 
+
+router 2 
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/1
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write
+
+router 3
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/1
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write 
+
+router 4 
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/1
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write 
+
+router 5
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write 
+
+router 6
+configure terminal 
+interface f1/0
+ip ospf 1 area 0
+int f0/0
+ip ospf 1 area 0
+end 
+write 
+
+
+
+
+passive 
+
+router 1 
+configure terminal 
+router ospf 1 
+passive-interface f1/0
+end 
+write 
+
+router 2 
+router 1 
+configure terminal 
+router ospf 1 
+passive-interface f1/0
+end 
+write 
+
+show ip ospf interface brief
+show ip ospf neighbor
+
+Foto base de datos 
+
+show ip ospf database
+show ip ospf database router
+show ip ospf database network
+
+
+r3 
+configure terminal 
+interface f1/0
+ip ospf cost 3 
+end 
+write 
+
+router 4 :
+config t
+interface f1/0
+shutdown 
+
+
+router 5 
+configure terminal 
+router ospf 1 
+default-information originate always 
+end 
+write 
+
+
+
+
+

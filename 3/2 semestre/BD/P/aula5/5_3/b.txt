@@ -1,0 +1,3 @@
+prescricao_do_medico = medico ⨝numSNS=numMedico prescricao
+
+γ especialidade;count(especialidade)->numero_prescricoes (prescricao_do_medico)

@@ -1,0 +1,16 @@
+VRRP 
+
+configure terminal 
+interface f1/0
+vrrp 1 ip 192.1.1.254
+vrrp 1 priority 80
+end 
+write 
+
+
+configure terminal 
+interface f1/0
+vrrp 1 ip 192.1.1.254
+vrrp 1 priority 100
+end 
+write 

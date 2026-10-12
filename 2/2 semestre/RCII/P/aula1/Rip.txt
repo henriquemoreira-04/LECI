@@ -1,0 +1,81 @@
+router 1 
+configure terminal 
+router rip
+version 2
+network 192.1.1.0
+network 192.0.12.0
+network 192.0.13.0
+end 
+write 
+
+router 2 
+configure terminal 
+router rip
+version 2
+network 192.1.1.0
+network 192.0.24.0
+network 192.0.12.0
+end
+write 
+
+router 3 
+configure terminal 
+router rip
+version 2
+network 192.0.13.0
+network 192.0.34.0
+network 192.0.35.0
+end
+write 
+
+router 4 
+configure terminal 
+router rip
+version 2
+network 192.0.24.0
+network 192.0.34.0
+network 192.0.46.0
+end
+write 
+
+router 5 
+configure terminal 
+router rip
+version 2
+network 192.0.35.0
+network 192.0.56.0
+end
+write 
+
+router 6 
+configure terminal 
+router rip
+version 2
+network 192.0.46.0
+network 192.0.56.0
+end
+write 
+
+
+
+
+
+passive 
+
+router 1
+
+configure terminal 
+router rip
+passive-interface f1/0
+end
+write
+
+router 2
+
+configure terminal 
+router rip
+passive-interface f1/0
+end
+write
+
+

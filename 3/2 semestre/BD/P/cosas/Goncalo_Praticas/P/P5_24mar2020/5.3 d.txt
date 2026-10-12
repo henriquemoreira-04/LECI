@@ -1,0 +1,16 @@
+-- 5.3 d)
+-- Lista de fármacos da farmacêutica nr. 906 nunca prescritos
+
+(
+	π farmaco.nome (
+		σ farmaco.numRegFarm=906 (farmaco)
+		-- get 906 pharmaceutical medicines list
+	) -- get their names only
+) - (
+	π presc_farmaco.nomeFarmaco (
+		σ presc_farmaco.numRegFarm=906 (
+			prescricao ⨝ prescricao.numPresc=presc_farmaco.numPresc (presc_farmaco)
+			-- add medicine data to each prescription
+		) -- get the prescriptions of 906 pharmaceutical
+	) -- get only the medicines name
+)

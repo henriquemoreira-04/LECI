@@ -1,0 +1,11 @@
+-- 5.3 e)
+-- Para cada farmácia, o número de fármacos de cada farmacêutica vendidos
+
+γ prescricao.farmacia, farmaceutica.nome; count(presc_farmaco.numRegFarm)->farmacosVendidos (
+	farmaceutica ⨝ farmaceutica.numReg=presc_farmaco.numRegFarm (
+		presc_farmaco ⨝ presc_farmaco.numPresc=prescricao.numPresc (
+			σ prescricao.farmacia!=null (prescricao)
+			-- get only the prescriptions sold
+		) -- merge each prescription with medicine data
+	) -- add pharmaceutical data to each medicin 
+) -- count the number of medicines of each pharmaceutical sold at each pharmacy

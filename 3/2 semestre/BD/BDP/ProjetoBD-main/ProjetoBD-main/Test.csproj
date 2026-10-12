@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Forms\CirurgiaForm.cs" />
+    <Compile Remove="Forms\CirurgiaForm.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Forms\CirurgiaForm.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\SalasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\HospitaisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\MedicosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\EnfermeirosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

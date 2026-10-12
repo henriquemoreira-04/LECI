@@ -1,0 +1,264 @@
+#include <Keypad.h>
+#include <Wire.h>
+#include <Adafruit_MMA8451.h>
+#include <Adafruit_Sensor.h>
+#include <SevSeg.h>
+
+// Configuración del keypad 4x3
+const byte ROWS = 4;
+const byte COLS = 3;
+char keys[ROWS][COLS] = {
+  {'1','2','3'},
+  {'4','5','6'},
+  {'7','8','9'},
+  {'*','0','#'}
+};
+byte rowPins[ROWS] = {9, 8, 7, 6}; // Conexiones de filas
+byte colPins[COLS] = {5, 4, 3};     // Conexiones de columnas
+Keypad keypad = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
+
+// Configuración del display 7 segmentos
+SevSeg sevseg;
+
+// Configuración del acelerómetro
+Adafruit_MMA8451 mma = Adafruit_MMA8451();
+
+// Configuración del buzzer
+const int buzzerPin = 10;
+
+// Variables del juego
+const String codigoCorrecto = "7355608"; // Código para desactivar
+String codigoIngresado = "";
+unsigned long tiempoInicio;
+const unsigned long tiempoLimite = 300000; // 5 minutos en milisegundos
+bool bombaActivada = true;
+bool movimientoDetectado = false;
+
+// Tonos para el buzzer
+const int tonoError = 200;
+const int tonoTecla = 500;
+const int tonoAcierto = 1000;
+const int tonoTicTac = 300;
+
+void setup() {
+  Serial.begin(9600);
+  
+  // Inicializar display 7 segmentos
+  byte numDigits = 4;
+  byte digitPins[] = {A0, A1, A2, A3}; // Pines de dígitos
+  byte segmentPins[] = {11, 12, A4, A5, 2, 1, 13, A6}; // Pines de segmentos (a-g + dp)
+  sevseg.begin(COMMON_CATHODE, numDigits, digitPins, segmentPins);
+  sevseg.setBrightness(90);
+  
+  // Inicializar acelerómetro
+  if (!mma.begin()) {
+    Serial.println("No se encontró el acelerómetro");
+    while (1);
+  }
+  mma.setRange(MMA8451_RANGE_2_G);
+  
+  // Configurar buzzer
+  pinMode(buzzerPin, OUTPUT);
+  
+  // Iniciar temporizador
+  tiempoInicio = millis();
+  
+  // Mostrar cuenta regresiva inicial
+  actualizarDisplay();
+  
+  // Sonido de inicio
+  tone(buzsterPin, tonoAcierto, 200);
+  delay(200);
+  tone(buzzerPin, tonoError, 200);
+  delay(200);
+}
+
+void loop() {
+  if (bombaActivada) {
+    // Verificar movimiento con el acelerómetro
+    verificarMovimiento();
+    
+    // Actualizar cuenta regresiva
+    unsigned long tiempoTranscurrido = millis() - tiempoInicio;
+    unsigned long tiempoRestante = tiempoLimite - tiempoTranscurrido;
+    
+    // Verificar si se acabó el tiempo
+    if (tiempoRestante <= 0) {
+      explosion();
+      return;
+    }
+    
+    // Actualizar display cada 100ms
+    static unsigned long ultimaActualizacion = 0;
+    if (millis() - ultimaActualizacion >= 100) {
+      ultimaActualizacion = millis();
+      actualizarDisplay();
+      
+      // Sonido de tic-tac (más rápido cuando queda menos tiempo)
+      if (tiempoRestante < 60000) { // Último minuto
+        tone(buzzerPin, tonoTicTac, 50);
+      } else if (tiempoRestante % 2000 < 100) { // Cada 2 segundos
+        tone(buzzerPin, tonoTicTac, 50);
+      }
+    }
+    
+    // Leer teclado
+    char key = keypad.getKey();
+    if (key) {
+      tone(buzzerPin, tonoTecla, 50);
+      
+      if (key == '#') {
+        // Intentar desactivar
+        if (codigoIngresado == codigoCorrecto && !movimientoDetectado) {
+          desactivarBomba();
+        } else {
+          error();
+        }
+        codigoIngresado = "";
+      } else if (key == '*') {
+        // Borrar entrada
+        codigoIngresado = "";
+      } else if (isdigit(key)) {
+        // Agregar dígito (máximo 7 dígitos)
+        if (codigoIngresado.length() < 7) {
+          codigoIngresado += key;
+        }
+      }
+    }
+  }
+}
+
+void verificarMovimiento() {
+  mma.read();
+  sensors_event_t event;
+  mma.getEvent(&event);
+  
+  // Calcular aceleración total
+  float aceleracion = sqrt(event.acceleration.x * event.acceleration.x +
+                          event.acceleration.y * event.acceleration.y +
+                          event.acceleration.z * event.acceleration.z);
+  
+  // Detectar movimiento brusco
+  if (aceleracion > 12.0) { // Valor empírico, ajustar según sensibilidad
+    movimientoDetectado = true;
+    // Pequeña penalización por movimiento
+    tiempoInicio -= 10000; // Quita 10 segundos
+    tone(buzzerPin, tonoError, 500);
+  } else {
+    movimientoDetectado = false;
+  }
+}
+
+void actualizarDisplay() {
+  unsigned long tiempoRestante = tiempoLimite - (millis() - tiempoInicio);
+  unsigned long segundos = tiempoRestante / 1000;
+  unsigned long minutos = segundos / 60;
+  segundos = segundos % 60;
+  
+  int valorDisplay = minutos * 100 + segundos;
+  sevseg.setNumber(valorDisplay, 2); // Mostrar MMSS
+  
+  // Parpadear si hay movimiento detectado
+  if (movimientoDetectado && (millis() % 200 < 100)) {
+    sevseg.blank();
+  } else {
+    sevseg.refreshDisplay();
+  }
+}
+
+void desactivarBomba() {
+  bombaActivada = false;
+  
+  // Mostrar mensaje de éxito
+  for (int i = 0; i < 3; i++) {
+    sevseg.setChars("dEAd"); // "dEAd" como "DEAd" (muerto)
+    delay(300);
+    sevseg.setChars("Ad");   // "Ad" como "Ad" (desactivado)
+    delay(300);
+  }
+  
+  // Sonido de éxito
+  for (int i = 0; i < 3; i++) {
+    tone(buzzerPin, tonoAcierto, 200);
+    delay(300);
+  }
+  
+  // Mantener display en "Ad"
+  while (true) {
+    sevseg.setChars("Ad");
+    sevseg.refreshDisplay();
+  }
+}
+
+void error() {
+  // Sonido de error
+  for (int i = 0; i < 3; i++) {
+    tone(buzzerPin, tonoError, 100);
+    delay(150);
+  }
+  
+  // Pequeña penalización por código incorrecto
+  tiempoInicio -= 5000; // Quita 5 segundos
+}
+
+void explosion() {
+  bombaActivada = false;
+  
+  // Mostrar explosión en display
+  for (int i = 0; i < 10; i++) {
+    sevseg.setNumber(8888); // Todos segmentos encendidos
+    tone(buzzerPin, 50 + i * 50, 100);
+    delay(50);
+  }
+  
+  // Sonido de explosión
+  for (int i = 200; i > 50; i--) {
+    tone(buzzerPin, i);
+    delay(10);
+  }
+  noTone(buzzerPin);
+  
+  // Mostrar "FALL" (fallo)
+  while (true) {
+    sevseg.setChars("FALL");
+    sevseg.refreshDisplay();
+  }
+}
+
+
+
+
+
+
+Características del Juego:
+Keypad 3x4: Para ingresar el código de desactivación
+
+Display 4 dígitos 7 segmentos: Muestra el tiempo restante en formato MMSS
+
+Buzzer pasivo: Proporciona retroalimentación auditiva:
+
+Tic-tac que se acelera
+
+Sonidos al presionar teclas
+
+Alertas de error/acierto
+
+Sonido de explosión
+
+Acelerómetro de 3 ejes: Detecta movimientos bruscos
+
+Si mueves la bomba, pierdes tiempo
+
+Debes mantenerla estable mientras ingresas el código
+
+Mecánica del juego:
+
+Tienes 5 minutos para desactivar la bomba
+
+Código correcto: "7355608" (referencia a Counter-Strike)
+
+Si ingresas un código incorrecto, pierdes 5 segundos
+
+Si mueves la bomba, pierdes 10 segundos
+
+El display parpadea cuando detecta movimiento

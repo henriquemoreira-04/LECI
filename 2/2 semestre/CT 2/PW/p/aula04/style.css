@@ -1,0 +1,88 @@
+/* Estilo global do site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    color: salmon;
+    font-style: italic;
+}
+
+.divider {
+    border: none;
+    height: 5px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+p{
+    font-size: 16px;
+}
+
+
+
+/* Negrito */
+.bold {
+    font-weight: bold;
+}
+
+/* Itálico */
+.italic {
+    font-style: italic;
+}
+
+/* Sublinhado */
+.underline {
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.purple {
+    color: purple;
+    font-weight: bold;
+}
+a {
+    color: purple;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}
+.copyright {
+    color: red;
+    font-size: 18px;
+}
+
+/* Estilos específicos para a hiperligação da UA */
+#ua-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+#ua-link:hover {
+    font-style: italic;
+    color: orange;
+    background-color: green;
+}
+

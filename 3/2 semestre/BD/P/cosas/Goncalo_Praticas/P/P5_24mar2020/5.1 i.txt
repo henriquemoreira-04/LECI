@@ -1,0 +1,24 @@
+-- 5.1 i)
+-- Nomes e endereços dos funcionários que trabalham em pelo menos um projeto de Aveiro
+-- MAS em que o seu departamento não tem nenhuma localização em Aveiro
+
+π Ssn, Fname, Lname, Address (
+-- get requested attributes
+	σ Dlocation!='Aveiro' (
+	-- filter location so it is not Aveiro
+		dept_location ⟗ (
+		-- get data on each department location
+			department ⨝ Dnumber=Dno (
+			-- get department data for each employee
+				employee ⨝ Ssn = Essn (
+				-- get more data on each employee
+					π Essn ( works_on ⨝ Pno=Pnumber ( 
+					-- employees Ssn that work in Aveiro's project
+						π Pnumber (σ Plocation='Aveiro' (project)) 
+						-- Get project number of projects in Aveiro
+					))
+				)
+			)
+		)
+	)
+)

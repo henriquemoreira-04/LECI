@@ -1,0 +1,10 @@
+-- 5.3 b)
+-- Número de prescrições por especialidade médica
+
+γ medico.especialidade; count(medico.especialidade)->numPrescricoes (
+-- count the number of prescriptions foreach medic specialty
+	prescricao ⨝ prescricao.numMedico=medico.numSNS (medico) 
+	-- add medic data to each prescription
+)
+
+-- γ Plocation; count(Plocation)->Numero (project)

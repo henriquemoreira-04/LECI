@@ -1,0 +1,43 @@
+
+A(i,j) primera es la fila después es la columna 
+Initial_number : step : Final_number
+
+
+
+
+
+MPECI guion 0 
+(a) Crea un vector fila con una secuencia de números pares comenzando en 4 y terminando en el número 100.
+
+inicio:paso:final 
+
+(b) Crea un vector fila con una secuencia decreciente de enteros comenzando en 5 y terminando en -5.
+
+vecb = 5:-1:-5
+
+(c) Crea un vector fila con una secuencia de números reales equitativamente espaciados con 100 elementos pertenecientes al rango [0...1]
+
+%% Ejercicio (c): 100 elementos entre 0 y 1
+% Para un número específico de elementos, usamos linspace
+vec_c = linspace(0, 1, 100);
+
+(d) Crea una matriz B con valores aleatorios usando el comando B = rand(20,30) (20 filas y 30 columnas). Extrae a una matriz C la submatriz de B compuesta por sus filas de la 10 a la 15 y sus columnas de la 9 a la 12.
+
+%% Ejercicio (d): Matrices y submatrices
+% Crear matriz aleatoria 20x30
+B = rand(20, 30);
+% Extraer submatriz C
+% Sintaxis: Matriz(filas_inicio:filas_fin, col_inicio:col_fin)
+C = B(10:15, 9:12);
+
+
+(e) Crea una secuencia, x, comenzando con el valor -pi, terminando con el valor pi y con un paso de pi/15.
+
+%% Ejercicio (e): Secuencia con Pi
+% Usamos 'pi' que es una constante interna de MATLAB
+x = -pi:pi/15:pi;
+
+
+(f) ejecutar el comando plot(x,sin(4*pi*x)) que se obtiene ??
+
+Al ejecutar el comando, obtienes una ventana de figura (Figure Window) que muestra una onda sinusoidal. Debido al factor $4\pi$ dentro del seno, la onda oscila más rápido (tiene una frecuencia más alta) que una onda seno normal, mostrando múltiples ciclos entre $-\pi$ y $\pi$.

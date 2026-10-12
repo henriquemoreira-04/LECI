@@ -1,0 +1,1 @@
+π nome (σ numRegFarm = 906 (farmaco)) - ρ nome <- nomeFarmaco ( π nomeFarmaco ( presc_farmaco))

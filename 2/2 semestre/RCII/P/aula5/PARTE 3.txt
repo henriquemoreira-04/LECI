@@ -1,0 +1,89 @@
+PARTE 3 
+
+DIST1
+
+vlan database 
+vlan 10 
+vlan 20
+vlan 30
+vlan 40
+apply
+exit 
+configure terminal 
+int f1/0
+switchport mode access
+switchport access vlan 10
+int f1/1 
+switchport mode access
+switchport access vlan 20
+int range f1/14 - 15
+switchport mode trunk 
+end 
+write
+
+
+DIST2
+
+vlan database 
+vlan 10 
+vlan 20
+vlan 30
+vlan 40
+apply
+exit 
+configure terminal 
+int f1/0
+switchport mode access
+switchport access vlan 10
+int f1/1 
+switchport mode access
+switchport access vlan 20
+int f1/2
+switchport mode access
+switchport access vlan 30
+int range f1/14 - 15
+switchport mode trunk 
+end 
+write
+
+
+DIST3
+
+
+vlan database 
+vlan 10 
+vlan 20
+vlan 30
+vlan 40
+apply
+exit 
+configure terminal 
+int f1/0
+switchport mode access
+switchport access vlan 10
+int f1/1 
+switchport mode access
+switchport access vlan 40
+int range f1/14 - 15
+switchport mode trunk 
+end 
+write
+
+
+CORE1 - CORE 2
+
+vlan database
+vlan 10
+vlan 20 
+vlan 30
+vlan 40
+apply
+exit
+configure terminal
+int range f1/0 - 3
+switchport mode trunk
+end 
+write
+
+
+

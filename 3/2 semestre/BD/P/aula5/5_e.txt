@@ -1,0 +1,1 @@
+π Fname,Lname ( (π Ssn (employee) - ρ Ssn ( π Essn (works_on))) ⨝ employee) 

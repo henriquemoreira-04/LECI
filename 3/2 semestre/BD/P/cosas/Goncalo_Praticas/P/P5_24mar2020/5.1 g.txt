@@ -1,0 +1,12 @@
+-- 5.1 g)
+-- Lista de todos os funcionários com mais do que dois dependentes
+
+π Ssn, Fname, Lname ( -- Filter attributes
+	employee ⨝ Ssn=Essn ( -- Get employees data
+		σ Dependents>=2 ( -- Filter which have 2 or more dependents
+			γ Essn; count(Essn)->Dependents (dependent) -- Count number of dependents for each Essn
+		)
+	)
+)
+
+-- γ a,b; count(c)->c (a)

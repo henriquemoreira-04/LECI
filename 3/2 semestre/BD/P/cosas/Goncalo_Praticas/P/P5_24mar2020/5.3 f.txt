@@ -1,0 +1,15 @@
+-- 5.3 f)
+-- Pacientes que tiveram prescrições de médicos diferentes
+
+σ numeroMedicosQuePrescreveram>1 (
+-- select patients that have das prescriptions from more than one medic
+-- and show how many were prescribed
+	γ paciente.numUtente, paciente.nome; count(medico.numSNS)->numeroMedicosQuePrescreveram (
+	-- count number of medics that made prescriptions foreach patient
+		medico ⨝ medico.numSNS=prescricao.numMedico (
+		-- add medic data foreach prescription
+			prescricao ⨝ prescricao.numUtente=paciente.numUtente (paciente)
+			-- add intel about pacient foreach prescription
+		)
+	)
+)

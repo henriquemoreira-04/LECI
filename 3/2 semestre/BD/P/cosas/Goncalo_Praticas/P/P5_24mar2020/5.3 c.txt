@@ -1,0 +1,10 @@
+-- 5.3 c)
+-- Número de prescrições processadas por farmácia
+
+γ farmacia.nome; count(farmacia.nome)->prescricoesProcessadas (
+-- count the number of prescriptions associated with each pharmacy
+	farmacia ⨝ farmacia.nome=prescricao.farmacia (prescricao) 
+	-- add pharmacy data to each prescription
+)
+
+-- γ Plocation; count(Plocation)->Numero (project)

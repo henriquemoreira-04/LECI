@@ -1,0 +1,1 @@
+γ farmacia; count(numPresc) -> numPrescTotal ( prescricao)

@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: left;
+}
+
+h1 {
+    color: blue;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    color: salmon;
+    font-style: italic;
+}
+
+h3 {
+    color: lightblue;
+}
+
+p{
+    font-size: 16px;
+}
+
+.copyright {
+    color: red;
+    font-size: 18px;
+}
+
+.divider {
+    border: none;
+    height: 5px;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.footer {
+    font-size: 14px;
+    color: black;
+    margin-top: 20px;
+}

@@ -1,0 +1,7 @@
+2.g Default router 5 
+
+configure terminal 
+router rip
+default-information originate
+end 
+write

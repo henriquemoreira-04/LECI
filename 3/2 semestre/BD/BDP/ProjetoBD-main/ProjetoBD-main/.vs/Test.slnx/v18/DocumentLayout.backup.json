@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\henri\\desktop\\bdp\\projetobd-main\\projetobd-main\\forms\\hospitaisform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:forms\\hospitaisform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\henri\\desktop\\bdp\\projetobd-main\\projetobd-main\\forms\\pacientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:forms\\pacientesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\henri\\desktop\\bdp\\projetobd-main\\projetobd-main\\forms\\pessoasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:forms\\pessoasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\forms\\pessoasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:forms\\pessoasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\henri\\desktop\\bdp\\projetobd-main\\projetobd-main\\dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:dal\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|c:\\users\\henri\\desktop\\bdp\\projetobd-main\\projetobd-main\\test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1E7CB755-154A-45BD-4B30-C030123AA28B}|Test.csproj|solutionrelative:test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PacientesForm.cs",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\PacientesForm.cs",
+              "RelativeDocumentMoniker": "Forms\\PacientesForm.cs",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\PacientesForm.cs",
+              "RelativeToolTip": "Forms\\PacientesForm.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T12:15:26.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pessoasform.cs",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\Pessoasform.cs",
+              "RelativeDocumentMoniker": "Forms\\Pessoasform.cs",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\Pessoasform.cs",
+              "RelativeToolTip": "Forms\\Pessoasform.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCIAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:48:39.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pessoasform.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\Pessoasform.cs",
+              "RelativeDocumentMoniker": "Forms\\Pessoasform.cs",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\Pessoasform.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Forms\\Pessoasform.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:48:35.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HospitaisForm.cs",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\HospitaisForm.cs",
+              "RelativeDocumentMoniker": "Forms\\HospitaisForm.cs",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Forms\\HospitaisForm.cs",
+              "RelativeToolTip": "Forms\\HospitaisForm.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCAAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:35:23.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\DAL\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "DAL\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\DAL\\DatabaseHelper.cs",
+              "RelativeToolTip": "DAL\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T11:33:40.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Test.csproj",
+              "DocumentMoniker": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Test.csproj",
+              "RelativeDocumentMoniker": "Test.csproj",
+              "ToolTip": "C:\\Users\\henri\\Desktop\\BDP\\ProjetoBD-main\\ProjetoBD-main\\Test.csproj",
+              "RelativeToolTip": "Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T11:33:33.49Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

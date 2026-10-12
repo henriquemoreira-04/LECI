@@ -1,0 +1,5 @@
+prescricao_paciente = prescricao ⨝prescricao.numUtente=paciente.numUtente paciente
+
+medico_paciente = π numSNS,medico.nome,paciente.nome (medico ⨝numSNS=numMedico (prescricao_paciente))
+
+γ paciente.nome;count(medico.nome)->num_medicos (medico_paciente)

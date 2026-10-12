@@ -1,0 +1,17 @@
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\bin\Debug\net10.0-windows\exe12.exe
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\bin\Debug\net10.0-windows\exe12.deps.json
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\bin\Debug\net10.0-windows\exe12.runtimeconfig.json
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\bin\Debug\net10.0-windows\exe12.dll
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\bin\Debug\net10.0-windows\exe12.pdb
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.Form1.resources
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.csproj.GenerateResource.cache
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.AssemblyInfoInputs.cache
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.AssemblyInfo.cs
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.csproj.CoreCompileInputs.cache
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.dll
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\refint\exe12.dll
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.pdb
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.genruntimeconfig.cache
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\ref\exe12.dll
+C:\Users\henri\Desktop\UA\tercer año\segundo semestre\BD\P\aula1\exe12\obj\Debug\net10.0-windows\exe12.Properties.Resources.resources

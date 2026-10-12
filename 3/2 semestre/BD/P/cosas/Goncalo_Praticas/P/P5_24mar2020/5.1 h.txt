@@ -1,0 +1,12 @@
+-- 5.1 h)
+-- Todos os funcionários gestores de departamento que não têm dependentes
+
+π Ssn, Fname, Lname ( -- Select attributes to show
+	employee ⨝ Ssn = Mgr_ssn ( -- Get employee data, given it's Ssn
+		σ dependent.Relationship=null ( -- Get all that don't have relationships
+			dependent ⟗ Essn=Mgr_ssn ( -- Full outer join
+				σ Mgr_ssn!=null (π Mgr_ssn (department)) -- Get managers Ssn
+			)
+		)
+	)
+)

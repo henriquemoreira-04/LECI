@@ -1,0 +1,13 @@
+-- 5.3 a)
+-- Lista de pacientes que nunca tiveram prescrição
+
+-- 
+
+π paciente.numUtente, paciente.nome ( 
+-- show only patient name and sns number
+	σ prescricao.numPresc=null ( 
+	-- find what patients have null prescription
+		paciente ⟗ paciente.numUtente=prescricao.numUtente (prescricao) 
+		-- add patient data to each prescription
+	)
+)

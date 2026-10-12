@@ -1,0 +1,11 @@
+-- 5.1 b)
+
+π Fname, Minit, Lname ( -- Get only some atributes
+	employee ⨝ employee.Super_ssn=supervisor.Ssn ( -- Get employees supervised by Carlos
+		ρ supervisor ( -- Rename relation from emplyee to Supervisor
+			π Ssn ( -- Get his Ssn
+				σ (Fname='Carlos' ∧ Minit='D' ∧ Lname='Gomes') (employee) -- Select Carlos D Gomes
+			)
+		)
+	)
+)
