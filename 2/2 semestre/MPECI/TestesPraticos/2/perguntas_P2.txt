@@ -1,0 +1,103 @@
+#2. Consider a Call Center service with 48 operators such that each operator attends each client with an exponentially distributed time of 6minutos. the service receives reuqests at an average rate of 400 requests/hour.
+a) COmpute the percentage of requests that ate imediatly attended (i.e. they do not suffer queuing delay).
+Result: _________%
+Matlab Code:
+
+b)Compute the average queuing time (in seconds) per request of the service.
+Result:______%
+Matlab code:
+
+c)
+Develop a script to plot the probability (in%) of all operators being ocupied as a funciton of the number of operators for 45, 48, 51, 54, 57 and 60 operators. Use matlab bar function to make the plot. Add a grid and add also apropriate labels for both axes.  Add below a justification for the results obtained in the resultign plot.
+Matlab code:
+Justification:
+%Justificacao:
+O comportamento observado deve-se às propriedades não-lineares do modelo Erlang-C.
+À medida que o número de operadores ($m$) sobe de 45 para 60, a taxa de chegada
+mantém-se constante ($\lambda = 400$), reduzindo a utilização do sistema ($\rho$) de $\approx 89\%$ para $\approx 67\%$.
+Sistemas de filas de espera perto da saturação são altamente sensíveis a variações.
+Assim, a adição de poucos operadores cria uma margem de segurança que diminui a
+probabilidade de bloqueio ($P_Q$) de forma drástica e exponencial (de $34,07\%$ para $0,20\%$).
+Isto ilustra o forte impacto dos ganhos de escala na eficiência de um Call Center.
+
+
+
+3. Consider the provided matlab code function SimutalorB() that implements a discrrete event simulator of a data link connection with an infinite size queue. 
+The simulator estimates the performance parameter PAR that is returned by the function.
+
+a) Through the analysis of the provided funciotn, identify the performance parameter PAR (and its units) estimated by the simulator and describe how  it is comported.
+
+b) Through the analysis of the provided function, describe the probability mass function of the packet size considered by the simulator.
+
+
+3. c)
+Consider the cause of packet arrival rate of 45000 packets/sec, a link capacity of 100Mbps and N=10^4. Using the provided function, develop a script and run it to compute the estimated value and the associated 90% confidence intervals of parameter PAR based on 10 runs.
+Results: 
+Average:______________
+Confidance interval =[_____________________,_____________________]
+
+Matlab code of the script:
+
+d) Repeat question 3c) but now computing the simulation results
+
+3. a) Parâmetro de Desempenho Estimado (PAR)
+Identificação: Atraso Médio de Espera na Fila (ou Average Queuing Delay).
+
+Unidade: Segundos (s).
+
+Como é calculado: 1. Sempre que um pacote chega e a ligação está ocupada, o instante de chegada é guardado na variável QUEUE.
+2. No evento de transmissão (case DEPARTURE), o simulador retira o pacote da fila e calcula o tempo que ele esteve à espera através 
+da subtração: Clock - QInstant.
+3. Esse tempo é acumulado na variável DELAYS. No final da simulação, o parâmetro PAR é obtido dividindo o atraso total acumulado (DELAYS)
+pelo número total de pacotes transmitidos (N).
+
+
+
+
+1. Consider a data center with N servers and t maintenance technicians. The amount of time each server runs until it fails is exponentially 
+distributed with an average of d_F days. The server repair time of each technician is exponentially distributed with an average of d_R hours. 
+The markov chain representin the number of failing servers is:
+States: 0, 1, 2, 3, 4, 5
+0 -> 1 = 5/100
+1 -> 2 = 4/100
+2 -> 3 = 3/100
+3 -> 4 = 2/100
+4 -> 5 = 1/100
+5 -> 4 = 6
+4 -> 3 = 6
+3 -> 2 = 6
+2 -> 1 = 6
+1 -> 0 = 3
+where the state transition rates are in number of transitions per day.
+a) Determine from the markov chain the number of servers N, the number of technicians t, and the average times d_F and d_R. Justify
+Results:
+N = ___________ servers
+t = ___________ technicians
+d_F=___________ days
+d_R = __________ hours
+Justification:
+
+b) Compute the state limiting probabilities (in%) of all states. Write the probabilities of state 1 and state 2 with 6 decimal digits.
+
+Results:
+
+Prob. of state 1 = _________%
+
+Prob. of state 2= _________%
+
+Matlab code:
+
+
+
+c) Determine the probability (in%) of at least x servers being in operation. Consider x=4 and x=5. Write the probabilities with 6 decimal digits.
+
+Results: 
+
+Prob(x=4) = __________%
+
+Prob(x=5)=___________%
+
+Matlab code:
+
+
+
